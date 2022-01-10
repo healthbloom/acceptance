@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Ubuntu&display=swap');
+h2, h4, p, a{
+    font-family: 'Ubuntu', sans-serif;
+}
+.header-wrap{
+    background-color: #FF8F93;
+    border-bottom: 1px solid #fff;
+}
+
+.body-wrap{
+    background-image: url("img/dura-bg-black.jpg");
+    /*<a href="http://www.freepik.com">Designed by Katemangostar / Freepik</a>*/
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:80px 0px;
+}
+.main-body h2{
+    color:#FE595F;
+    text-shadow: 1px 1px #d6d6d6;
+}
+.main-body h4{
+    color:#ff00c8;
+}
+.main-body p{
+    color:#fff;
+    font-size:22px;
+}
+
+.offer_blink {
+    animation: blinker 1s linear infinite;
+    color:#FB0F4D;
+    font-size:30px;
+    font-weight: 700;
+  }
+
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .button_blink {
+    animation: buttonblink 1.5s  infinite;
+    transition: 1s all ease;
+  }
+
+  
+  @keyframes buttonblink {
+    0%{
+        background-color: #f3696e;
+    }
+    25%{
+        background-color: #A863A8;
+    }
+    50% {
+      background-color: #F06EAA;
+    }
+    75%{
+        background-color: #855FA8;
+    }
+    100%{
+        background-color:#f3696e ;
+    }
+  }
+
+.btn-accept{
+    background-color:#f3696e;
+    color:#fff;
+    border:none;
+    padding: 20px 30px;
+}
+.btn-decline{
+    background-color:#6C757D;
+    color:#fff;
+    border:none;
+}
+
+.btn>a{
+    color:#fff;
+    text-decoration: none;
+}
+.btn-accept:hover{
+    background-color:#FE595F;
+}
+.btn-decline:hover{
+    background-color:#666c72;
+}
+
+.privacy h4, p, a, .terms h4, p, a{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-wrap{
+    background-color: #FF8F93!important;
+    border-top: 1px solid #fff;
+    overflow: hidden;
+}
+.footer p{
+    color:#fff;
+    font-family: ubuntu;
+}
+.footer p>a{
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+.footer p>a:hover{
+    text-decoration: underline;
+    color:rgb(230, 228, 228);
+}
+
+/*Media Query*/
+@media only screen and (max-width: 767px) {
+    .body-wrap{
+        background-size: cover;
+        padding:40px 0px;
+    }
+}
